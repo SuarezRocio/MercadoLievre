@@ -1,0 +1,15 @@
+{
+  "name": "ml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "scripts": {
+    "test": "run test.js"
+  },
+  "keywords": [],
+  "author": "Rocio suarez",
+  "license": "ISC",
+  "dependencies": {
+    "package": "^1.0.1"
+  }
+}
