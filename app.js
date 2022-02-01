@@ -19,7 +19,7 @@ app.get('/', (req,res)=>{
 
 /*process.env.PORT */
 app.listen ( process.env.PORT || 3030 , ()=> {
-console.log('app corriendo en el puerto 3000')
+console.log('app corriendo en el puerto 3030')
 });
 
 

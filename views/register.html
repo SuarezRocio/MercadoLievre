@@ -22,46 +22,46 @@
   </div>
     
   
-  <div class="content-ones"> 
+
+
+  <div class="content-ones">
     <div class="container-1">
-      <div>
-       <input class="cajabusca" type="text" id="fname" name="fname" value="Buscar,productos,etc">
+      <div class="form" action="#" method="GET">
+        <input class="cajabusca" name="busqueda" placeholder="Buscar">
       </div>
-      <div>
-       <img class="lupa" src="imag-enes/lupa.png" alt="">
-      </div>        
+      <div id="botonlupa">
+        <button type="submit" class="submit" ><i class="fa fas-search"></i>Busca</button>
+        <img class="lupa" src="imag-enes/lupa.png" alt="">
+      </div>
     </div>
-   
+
     <div class="container-one">
-       <div>
-         <h2 class="titlecompra" >Compra sin tarjetas de credito y en cuotas</h2>
-       </div>
-       <div>
-         <img class="campana" src="imag-enes/campana.png" alt="">
-       </div>
-     </div>
-   </div>
-    
-  
-  
-  
-  <div class="container-2">
-      <div class="container-two">
-        <a href="https://www.mercadolibre.com.ar/ofertas#nav-header">Ofertas</a>
-        <a href="https://www.mercadolibre.com.ar/c/ropa-y-accesorios#nav-header">Tiendas Oficiales</a>
-        <a href="https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNQY7DIBAE_9JnZN855htRhMYwOGgHYw3jkCjK3yPvao_d6qp-Q9patmCvneHRWQQOu5DlpjWUBI96Vr0Y_0c6J6RU2Vg7_PuUrJwunJuemkzSGQ502D1kaQP-7wcOpQd-GutGEgYvj8ID_hdwWBs87mZ79_M8xpgqa6TUpCzKU2x1Ip33Y5ESSfFxyNQtmFL8gTc92CFxlLJxgr_ePl-1_Ab93gAAAA/notregistered">Ventas</a>
-        <a href="https://www.mercadolibre.com.ar/ayuda">Ayuda</a>
-        <a href="register.html">Crea tu cuenta</a>
-        <a href="login.html">Ingresa</a>
-        <a href="https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNQarDMAxE7zJrk-y97EWM6siJ-XJsJKVtKL17CZ8uh5n35g3pa92Tn4MRwa8hNVdHwBDy0rWluiCiCQKsOv8iXRNSauyshvi-RCsvNy5dL1UhMUYAHb6lIv2J-P-FgGqJX866k6Qn3x-Vr_ZHrB0Rm_uwOM_tpJz7sfvUWDMtXepdecq9TaRzO9M4NG9kbLNUc3wCCpknV8p_iK4Hf74ZcyDg5QAAAA/user">Mis compras</a>
+      <div>
+        <h2 class="titlecompra">Compra sin tarjetas de credito y en cuotas</h2>
       </div>
-
-      <div class="container-three">
-        <img class="menu" src="imag-enes/menu.png" alt="menu">
+      <div>
+        <img class="dinero" src="imag-enes/ahorrar-dinero.png" alt="">
       </div>
-
     </div>
-  
+  </div>
+
+
+
+  <div class="container-2">
+    <div class="container-two">
+      <a href="#">Ofertas</a>
+      <a href="#">Tiendas Oficiales</a>
+      <a href="#">Ventas</a>
+      <a href="#">Ayuda</a>
+      <a href="register.html">Crea tu cuenta</a>
+      <a href="login.html">Ingresa</a>
+      <a href="#">Mis compras</a>
+    </div>
+    <div class="container-three">
+      <img class="menu" src="imag-enes/menu.png" alt="menu">
+    </div>
+
+  </div>
 
   <div class="content-3">
       <div class="container-four">
@@ -76,30 +76,107 @@
 
 
 
-<div class="content-4">
-<div class="container-five">
-  <div class="cajasdetexto">
-    <input type="text" value="Nombre y apellido">
-    <input type="text" value="Nombre de usuario">
-    <input type="email" value="Email">
-    <input type="date" name="" id="">
-  </div>
-  
-   <div class="buttons"> 
-    <input class="boton" type="button" value="">
-    <input class="boton" type="button" value="">
-   </div>
-</div>
-  <div class="checkboxs">
-  <input type="checkbox" name="" id="">
-  <input type="checkbox" name="" id="">
-  <input type="checkbox" name="" id="">
-  <input type="checkbox" name="" id="">
-  <input type="checkbox" name="" id="">
+  <div class="content-4">
+    <div class="container-five">
+      <form method="post" action="#" class="cajasdetexto">
+        <label for="">Registro de datos</label>
+        <br><br>
+        <label for="nombreYapellido">Nombre y Apellido</label>
+        <input class="nm" type="text" name="nombreapellido" required="">
+        <label for="usuario">Nombre de usuario</label>
+        <input type="text" name="usuario" required="">
+        <label for="email">Email</label>
+        <input type="email" name="email" required="">
+        <label for="fecha"></label>
+        <input type="date" name="fecha" required="">
+      </form>
+
+      <br>
+
+      <form action="#" method="post">
+        <div class="buttons">
+          <label for="Perfil">Perfil del usuario</label>
+          <br>
+          <div>
+            <label for="perfil_usuario">
+              <input class="boton" type="radio" name="perfil_usuario" required="">
+              Comprador
+            </label>
+          </div>
+          <div>
+            <label for="perfil_usuario_2">
+              <input class="boton" type="radio" name="perfil_usuario_2" required="">
+              Vendedor
+            </label>
+          </div>
+
+        </div>
+      </form>
+
+
+      <form action="#" method="post">
+        <div class="checkboxs">
+          <label for="intereses">Intereses</label>
+          <br>
+          <div>
+            <label for="Electro">
+              <input type="checkbox" name="Electro">
+              Electro
+            </label>
+          </div>
+          <div>
+            <label for="Moda">
+              <input type="checkbox" name="moda">
+              Moda
+            </label>
+          </div>
+          <div>
+            <label for="Hogar">
+              <input type="checkbox" name="hogar">
+              Hogar
+            </label>
+          </div>
+          <div>
+            <label for="jugueteria">
+              <input type="checkbox" name="jugueteria">
+              Jugueteria
+            </label>
+          </div>
+          <div>
+            <label for="vidasana">
+              <input type="checkbox" name="vidasana">
+              Vida Sana
+            </label>
+          </div>
+
+        </div>
+
+
+      </form>
+
+      <form action="#" method="post">
+        <div class="fotouser">
+          <label for="Foto">Foto de usuario</label><br><br>
+          <input type="file" accept=".jpg .png">
+          <label for="password">Crear contraseña</label><br>
+          <input class="pass" type="password" name="password" required="" placeholder="contraseña">
+        </div>
+        <div>
+          <label for="password_2">Confirmar contraseña</label><br><br>
+          <input class="pass" type="password" name="password_2" required="" placeholder="confirmar contraseña">
+        </div>
+        <br><br>
+        <button id="envio">Enviar</button>
+        <button id="borrar">Borrar</button>
+    </div>
+
+
+
+
+
+    </form>
 
   </div>
-    
-</div>
 
 
   <div class="footercontent">
