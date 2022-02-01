@@ -4,7 +4,8 @@
   "description": "",
   "main": "entry.js",
   "scripts": {
-    "test": "run test.js"
+    "test": "run test.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Rocio suarez",
